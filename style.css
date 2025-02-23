@@ -68,6 +68,12 @@ section {
   position: relative;
   padding: 3rem;
 }
+@media (max-width: 768px) {
+  section {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 section *::selection {
   color: var(--section);
   background-color: var(--selection);
@@ -81,6 +87,11 @@ h1 {
 .select {
   margin: 1rem;
   position: sticky;
+}
+@media (max-width: 768px) {
+  .select {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
