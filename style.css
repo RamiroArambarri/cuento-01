@@ -21,6 +21,7 @@ p:first-of-type {
   --section: $dark-section;
   --text: $dark-text;
   --title: $dark-title;
+  --selection: $dark-selection;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +31,7 @@ p:first-of-type {
     --section: #212121;
     --text: #e0e0e0;
     --title: #b3a786;
+    --selection: #b3a786;
   }
 }
 :root:has(#theme [value=light]:checked) {
@@ -38,6 +40,7 @@ p:first-of-type {
   --section: #ffffff;
   --text: #2e2e2e;
   --title: #595959;
+  --selection: #918565;
 }
 
 :root:has(#theme [value=dark]:checked) {
@@ -46,6 +49,7 @@ p:first-of-type {
   --section: #212121;
   --text: #e0e0e0;
   --title: #b3a786;
+  --selection: #b3a786;
 }
 
 body {
@@ -63,6 +67,10 @@ section {
   font-family: calibri;
   position: relative;
   padding: 3rem;
+}
+section *::selection {
+  color: var(--section);
+  background-color: var(--selection);
 }
 
 h1 {
