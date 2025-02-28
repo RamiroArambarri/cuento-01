@@ -10,8 +10,6 @@ p
     @media(max-width: 768px)
         font-size: 1rem
 
-
-
 .author
     font-size: 1.2rem
     display: block
@@ -91,8 +89,68 @@ h1
     @media(max-width: 768px)
         font-size: 1.3rem
 
-.select 
+.select
     margin: 1rem
     position: sticky
     @media(max-width: 768px)
         display: none
+
+dialog 
+    padding: 0
+
+.modal-container
+    width: 800px
+    display: flex
+    flex-wrap: wrap
+    max-width: 100%
+    justify-content: space-between
+    padding: 2rem
+    align-items: start
+    box-sizing: border-box
+
+    h2
+        width: calc(80% - 1rem)
+        margin: 0 0 2em
+
+    
+    #close
+        font-size: 2em
+        width: calc(10% - 1rem)
+        padding: 0
+        outline: none
+        border: none
+        background-color: rgba(0,0,0,0)
+
+        &:hover
+            cursor: pointer
+            color: var(--title)
+
+    p
+        width: 70%
+        
+        @media(max-width: 768px)
+            width: 100%
+
+    img
+        width: 20%
+        height: auto
+        object-fit: contain
+        object-position: top
+
+        @media(max-width: 768px)
+            width: 80%
+
+cite
+    &:hover
+        cursor: pointer
+        color: var(--title)
+    text-decoration: underline
+    
+
+
+a
+    color: var(--text)
+    &:hover
+        color: var(--title)
+        
+

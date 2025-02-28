@@ -20,7 +20,7 @@
 
     <section>
         <h1>El color de Takeshima</h1>
-        <cite class="author"><em>Ramiro Arambarri</em></cite>
+        <cite id="author" class="author" onclick="openModal()"><em>Ramiro Arambarri</em></cite>
         <br>
         <p>
             Fue mucho lo que Takeshima Fumio sufrió durante los años en los que combatía bajo el estandarte de Toyonomi
@@ -126,6 +126,25 @@
 
         </p>
     </section>
+    <dialog>
+        <div class="modal-container">
+            <h2>¡Hola!</h2>
+            <button id="close" onclick="closeModal()">☒</button>
+            <p>Soy Ramiro Arambarri, autor de este cuento, y te quería contar que no solo escribo,
+                sino que me apasiona hacer arte en todo tipo de formatos: dibujar, componer, programar, y más.
+                Si te interesa ver un poco más de mi obra, te invito a seguirme en mis redes sociales.<br><br>
+                <a href="https://www.instagram.com/ramiro_arambarri/">Instagram</a><br><br>
+                <a href="https://www.youtube.com/@ramiro_arambarri/">Youtube</a><br><br>
+                O visitar mi <a href="https://ramiroarambarri.github.io/illustration-portfolio/">portfolio de
+                    ilustración</a>.<br><br>
+                Si querés contactarme directamente, podés hacerlo a mi mail: raarambarri@gmail.com.
+            </p><br>
+            <img src="photo.png" alt="Ramiro Arambarri">
+
+
+        </div>
+    </dialog>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -103,4 +103,69 @@ h1 {
   }
 }
 
+dialog {
+  padding: 0;
+}
+
+.modal-container {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: start;
+  box-sizing: border-box;
+}
+.modal-container h2 {
+  width: calc(80% - 1rem);
+  margin: 0 0 2em;
+}
+.modal-container #close {
+  font-size: 2em;
+  width: calc(10% - 1rem);
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.modal-container #close:hover {
+  cursor: pointer;
+  color: var(--title);
+}
+.modal-container p {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .modal-container p {
+    width: 100%;
+  }
+}
+.modal-container img {
+  width: 20%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+}
+@media (max-width: 768px) {
+  .modal-container img {
+    width: 80%;
+  }
+}
+
+cite {
+  text-decoration: underline;
+}
+cite:hover {
+  cursor: pointer;
+  color: var(--title);
+}
+
+a {
+  color: var(--text);
+}
+a:hover {
+  color: var(--title);
+}
+
 /*# sourceMappingURL=style.css.map */
